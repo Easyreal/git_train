@@ -1,4 +1,4 @@
-from .models import Car, Driver
+from models import Car, Driver
 
 
 
@@ -8,4 +8,4 @@ if __name__ == '__main__':
 
     for num in range(10):
         driver_bmw.drive()
-        print("Расстояние:", driver_bmw.transport.get_distance())
+        print(f"Расстояние пройденное машиной {driver_bmw.transport.mark}:", driver_bmw.transport.get_distance())
